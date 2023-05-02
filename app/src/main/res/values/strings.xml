@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">Jaber Mall</string>
+        <string name="skip">Continue as a Guest</string>
+        <string name="sign_in">Sign in with AL-Jaber Mall</string>
+        <string name="sign_up">or, Create a AL-Jaber Mall account</string>
+        <string name="add_to_cart">Add to Cart</string>
+        <string name="home">Home</string>
+        <string name="select">Select</string>
+        <string name="male">Male</string>
+        <string name="female">Female</string>
+        <string name="deals">Deals</string>
+        <string name="piece">%s /JOD</string>
+        <string name="one_kg">%s /JOD</string>
+        <string name="review_cart">Review Cart</string>
+        <string name="no_location">No Location Selected</string>
+        <string name="delivered">Delivered</string>
+        <string name="pickup" translatable="false">Pickup</string>
+        <string name="profile">Profile</string>
+        <string name="about_us">About Us</string>
+        <string name="contact_us">Contact Us</string>
+        <string name="language">Language</string>
+        <string name="my_orders">My Orders</string>
+        <string name="empty">No Data Available</string>
+        <string name="change_branch">Change Branch</string>
+        <string name="logout">Logout</string>
+        <string name="categories">Categories</string>
+        <string name="payment_method">Payment Method</string>
+        <string name="receipt_method">Receipt Method</string>
+        <string name="done">Done</string>
+        <string name="delivery">Delivery</string>
+        <string name="total">Total</string>
+        <string name="subtotal">Subtotal</string>
+        <string name="discount">Discount</string>
+        <string name="update">Update</string>
+        <string name="gender">Gender</string>
+        <string name="mobile_number">Mobile Number</string>
+        <string name="email">Email</string>
+        <string name="full_name">Full Name</string>
+        <string name="password">Password</string>
+        <string name="re_password">Confirm Password</string>
+        <string name="create_account">Create an Account</string>
+        <string name="agreement">By signing up, you agree to our terms of services &amp; Privacy Policy</string>
+        <string name="forget_pass">Forgot your password?</string>
+        <string name="reset_it">Reset it</string>
+        <string name="email_address">Email Address</string>
+        <string name="join_paradise">Join Jaber Mall Today Create an account to continue shopping</string>
+        <string name="select_location">Select location on map</string>
+        <string name="saved_address">Saved Address</string>
+        <string name="save">Save</string>
+        <string name="shopping">Continue Shopping</string>
+        <string name="city">City</string>
+        <string name="area">Area</string>
+        <string name="building_no">Building No</string>
+        <string name="apt_no">Apt No</string>
+        <string name="street">Street</string>
+        <string name="login">Login</string>
+
+        <string name="facebook_app_id" translatable="false">2509175212722254</string>
+        <string name="fb_login_protocol_scheme" translatable="false">fb2509175212722254</string>
+        <string name="fb_client_token" translatable="false">944178f58f6e741075a0251e95e5ebfa</string>
+
+        <string name="email_sign_in">Continue with email</string>
+        <string name="google_sign_in">Continue with google</string>
+        <string name="facebook_sign_in">Continue with facebook</string>
+        <string name="choose_branch">Choose branch</string>
+        <string name="cancel">Cancel</string>
+        <string name="view_cart">Show Cart</string>
+        <string name="alert">Alert</string>
+        <string name="place_order">Place Order</string>
+        <string name="cash">Cash</string>
+        <string name="online">Online</string>
+        <string name="logo" translatable="false">logo</string>
+        <string name="log_in_or">Log in or Create account</string>
+        <string name="client_server_id" translatable="false">1052065177977-98f573e1koed09j6qjfoocr643pdi6bc.apps.googleusercontent.com</string>
+        <string name="error">Err</string>
+        <string name="required">Required</string>
+        <string name="camera">camera</string>
+        <string name="birth_date">Birth date</string>
+        <string name="jordan_flag">jordan flag</string>
+        <string-array name="gender_array">
+            <item>Select Gender</item>
+            <item>Male</item>
+            <item>Female</item>
+        </string-array>
+
+        <string-array name="payment_methods_array">
+            <item>Select</item>
+            <item>Cash</item>
+            <item>Online</item>
+        </string-array>
+
+        <string-array name="receipt_method_array">
+            <item>Select</item>
+            <item>Pickup</item>
+            <item>Delivery</item>
+        </string-array>
+
+        <string name="pass_mismatch">Password Not Matching</string>
+        <string name="gender_required">Please Select Gender</string>
+        <string name="require_image">Please Select Image</string>
+        <string name="denied">Permission Denied</string>
+        <string name="cart">Cart</string>
+        <string name="favourite">Favourite</string>
+        <string name="header" translatable="false">header</string>
+        <string name="menu" translatable="false">menu</string>
+        <string name="loading">Please Wait</string>
+        <string name="product_image">product image</string>
+        <string name="add">add</string>
+        <string name="remove">remove</string>
+        <string name="add_to_favourite">Add to favourite</string>
+        <string name="related_products">Related Products</string>
+        <string name="item_detail">Item Detail</string>
+        <string name="kg">KG</string>
+        <string name="piece_text">Piece</string>
+        <string name="choose_branch_warning">Please choose branch</string>
+        <string name="deliver_to">Deliver To</string>
+        <string name="add_location">Add Location</string>
+        <string name="ops_cancel">Operation Canceled</string>
+        <string name="title_activity_maps">Map</string>
+        <string name="confirm_pin_location">Confirm Pin Location</string>
+        <string name="delivery_location">Delivery Location</string>
+        <string name="location">location</string>
+        <string name="select_location_message">Please Select Location</string>
+        <string name="payment_message">Please Select Payment Method</string>
+        <string name="receipt_message">Please Select Receipt Method</string>
+        <string name="empty_cart">Cart is empty</string>
+        <string name="no_email">No Email Client</string>
+        <string name="order_no">Order No: %d</string>
+        <string name="order_details">Order Details</string>
+        <string name="no_of_items">No of Items:</string>
+        <string name="total_price">Total Price:</string>
+        <string name="payment_status">Payment Status:</string>
+        <string name="shipping_address">Shipping Address</string>
+        <string name="quantity">quantity:</string>
+        <string name="arabic" translatable="false">العربية</string>
+        <string name="english" translatable="false">English</string>
+        <string name="guest_login">Please Login First</string>
+        <string name="open_cart">Open Cart</string>
+        <string name="close">Cancel</string>
+        <string name="clear_cart_message">There are products in your shopping cart… please empty it before changing the branch!!!!</string>
+        <string name="promo_code">Promo Code</string>
+        <string name="apply">apply</string>
+        <string name="promo_code_check">Please insert promo code</string>
+        <string name="products">Products</string>
+        <string name="all_categories">All Categories</string>
+        <string name="money">money</string>
+        <string name="welcome_login">Welcome back \n Login with your email and password</string>
+        <string name="price">%s JD each</string>
+        <string name="delete">Delete</string>
+        <string name="yes">Yes</string>
+        <string name="edit_account">Edit Account</string>
+        <string name="phone_number">Phone Number</string>
+        <string name="submit">Submit</string>
+        <string name="search">Search</string>
+        <string name="search_empty">Search field is empty</string>
+        <string name="products_search">Search for products</string>
+        <string name="payment_date">date</string>
+        <string name="message">Type a Message</string>
+        <string name="first_name">First Name</string>
+        <string name="last_name">Last Name</string>
+        <string name="send">Send</string>
+        <string name="fill_all_filed">Fill all fields</string>
+        <string name="subject">Subject</string>
+        <string name="hi">مرحبا</string>
+        <string name="current_password">Current Password</string>
+        <string name="new_password">New Password</string>
+        <string name="product_name">product name</string>
+        <string name="product_price">product price</string>
+        <string name="_962">+962</string>
+        <string name="jod">JOD</string>
+        <string name="payment">Payment</string>
+        <string name="username">Username</string>
+        <string name="user_information">Information Confrimation</string>
+        <string name="shipping_fees">shipping fees</string>
+        <string name="diliveryFess">Delivery Fees</string>
+        <string name="payments">Payment</string>
+        <string name="error_occurred">error_occurred</string>
+        <string name="correct_otp_required">Err</string>
+        <string name="resend_code_30">Resend code after (%s)</string>
+
+        <string name="resend_code">resend code</string>
+        <string name="verification_required">Phone verification required</string>
+        <string name="phone_number_sign_up">* رقم الهاتف</string>
+        <string name="add_phone_number">الرجاء إدخال رقم الهاتف</string>
+        <string name="edit_phone">تغيير رقم الهاتف</string>
+        <string name="confirm_new_password">تأكيد كلمة السر الجديدة</string>
+        <string name="old_password">كلمة السر القديمة</string>
+        <string name="forget_password_title">اعادة تعيين كلمة السر</string>
+        <string name="please_enter_phone">الرجاء ادخال رقم الهاتف لإرسال رمز التأكيد على الهاتف</string>
+
+</resources>
+
+
+
+

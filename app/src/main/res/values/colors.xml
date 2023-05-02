@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red_200">#3C6E3E</color>
+    <color name="red_500">#2F5331</color>
+    <color name="red_700">#274028</color>
+    <color name="teal_200">#2B4E2D</color>
+    <color name="teal_700">#2A452B</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="gray">#808080</color>
+    <color name="light_gray">#cacaca</color>
+    <color name="gray_tv">#fafafa</color>
+    <color name="colorRecyclerViewDelete">#CE1103</color>
+</resources>

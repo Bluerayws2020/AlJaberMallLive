@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.aljabermall.fragments.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.example.aljabermall.fragments.CategoriesFragment"
+        android:label="@string/all_categories"
+        tools:layout="@layout/fragment_categories" />
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.example.aljabermall.fragments.FavouriteFragment"
+        android:label="@string/favourite"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/productsDealsFragment"
+        android:name="com.example.aljabermall.fragments.ProductsDealsFragment"
+        android:label="@string/deals"
+        tools:layout="@layout/fragment_products_deals" />
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.example.aljabermall.fragments.ProductFragment"
+        android:label="@string/products"
+        tools:layout="@layout/fragment_product" />
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.aljabermall.fragments.CartFragment"
+        android:label="@string/cart"
+        tools:layout="@layout/fragment_cart" />
+</navigation>

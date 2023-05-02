@@ -1,0 +1,39 @@
+ext {
+    otpviewVersion = '3.1.0'
+}// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        google()
+        gradlePluginPortal()
+        maven() { url 'https://jitpack.io' }
+
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.2.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10"
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.14.0'
+        classpath 'com.google.gms:google-services:4.3.10'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.1'
+
+        def gradleTaskNames = gradle.startParameter.taskNames
+        if (gradleTaskNames.size() > 0) {
+            if (gradleTaskNames.get(0).contains("Google")) {
+                classpath 'com.google.gms:google-services:4.3.10'
+                classpath 'com.google.firebase:firebase-crashlytics-gradle:2.8.1'
+            }
+            if (gradleTaskNames.get(0).contains("Huawei")){
+                classpath 'com.huawei.agconnect:agcp:1.6.2.300'
+            }
+        }
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "935943990586",
+    "project_id": "aljaber-mall",
+    "storage_bucket": "aljaber-mall.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935943990586:android:3c047812b4a9aa7f2e3403",
+        "android_client_info": {
+          "package_name": "com.bluerayws.aljabermall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935943990586-hohp4ahmtf9df8dnbggfpthkvrqsivjt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCihaQGHxYcJrdRkzFtsBaNSNvJ2mpk7W4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935943990586-hohp4ahmtf9df8dnbggfpthkvrqsivjt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

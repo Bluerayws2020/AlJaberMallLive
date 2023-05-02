@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name"> جبر مول </string>
+    <string name="skip">تخطي</string>
+    <string name="sign_in">تسجيل الدخول مع جبر مول</string>
+    <string name="sign_up">أو, إنشاء حساب جبر مول</string>
+    <string name="add_to_cart">إضافة الى السلة</string>
+    <string name="home">الرئيسية</string>
+    <string name="select">اختر</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
+    <string name="deals">عروض</string>
+    <string name="piece">دينار %s</string>
+    <string name="one_kg">دينار %s</string>
+    <string name="review_cart">عرض السلة</string>
+    <string name="no_location">لم يتم تحديد الموقع</string>
+    <string name="delivered">تم الأستلام</string>
+    <string name="profile">حسابي</string>
+    <string name="about_us">من نحن</string>
+    <string name="contact_us">اتصل بنا</string>
+    <string name="language">اللغة</string>
+    <string name="my_orders">طلباتي</string>
+    <string name="empty">لا يوجد بيانات</string>
+    <string name="change_branch">تغيير الفرع</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="categories">الأصناف</string>
+    <string name="payment_method">طريقة الدفع</string>
+    <string name="receipt_method">طريقة الأستلام</string>
+    <string name="done">تم الانتهاء</string>
+    <string name="delivery">توصيل</string>
+    <string name="total">المجموع الكلي</string>
+    <string name="subtotal">المجموع</string>
+    <string name="discount">الخصم</string>
+    <string name="update">تحديث</string>
+    <string name="gender">الجنس</string>
+    <string name="mobile_number">رقم الهاتف</string>
+    <string name="email"> البريد الإلكتروني </string>
+    <string name="full_name">الاسم الكامل</string>
+    <string name="password"> كلمة المرور </string>
+    <string name="re_password">تأكيد كلمة المرور</string>
+    <string name="create_account">انشاء حساب</string>
+    <string name="agreement">بالتسجيل , فإنك توافق على شروط الخدمات و سياسة الخصوصية الخاصة بنا</string>
+    <string name="forget_pass">هل نسيت كلمة السر؟</string>
+    <string name="reset_it">اعادة الضبط</string>
+    <string name="email_address">عنوان بريدي</string>
+    <string name="join_paradise">انضم الى جبر مول اليوم , إنشاء حساب للتسوق</string>
+    <string name="select_location">اختر موقعك على الخريطة</string>
+    <string name="saved_address">المواقع المحفوظة</string>
+    <string name="save">حفظ</string>
+    <string name="shopping">اكمال التسوق</string>
+    <string name="city">مدينة</string>
+    <string name="area">منطقة</string>
+    <string name="building_no">رقم البناء</string>
+    <string name="apt_no">رقم الشقة</string>
+    <string name="street">الشارع</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="email_sign_in">الدخول عن طريق الايميل</string>
+    <string name="google_sign_in">الدخول عن طريق جوجل</string>
+    <string name="facebook_sign_in">الدخول عبر فيسبوك</string>
+    <string name="choose_branch">اختر الفرع</string>
+    <string name="cancel">الغاء</string>
+    <string name="view_cart">عرض السلة</string>
+    <string name="alert">تنبيه</string>
+    <string name="place_order">تقديم الطلب</string>
+    <string name="cash">كاش</string>
+    <string name="online">اونلاين</string>
+    <string name="log_in_or">تسجيل الدخول أو انشاء حساب</string>
+    <string name="error">حدث خطأ</string>
+    <string name="required">حقل مطلوب</string>
+    <string name="camera">كاميرا</string>
+    <string name="birth_date">تاريخ الولادة</string>
+    <string name="pass_mismatch">كلمة السر غير متطابقة</string>
+    <string name="gender_required">الرجاء إختيار الجنس</string>
+    <string name="require_image">الرجاء إختيار صورة</string>
+    <string name="denied">تم رفض الأذن</string>
+    <string name="loading">الرجاء الأنتظار</string>
+    <string name="item_detail">تفاصيل المنتج</string>
+    <string name="kg">كيلو</string>
+    <string name="piece_text">قطعة</string>
+    <string name="cart">السلة</string>
+    <string name="favourite">المفضلة</string>
+    <string name="product_image">صورة المنتج</string>
+    <string name="add">اضافة</string>
+    <string name="remove">ازالة</string>
+    <string name="add_to_favourite">اضافة الى المفضلة</string>
+    <string name="related_products">منتجات ذات صلة</string>
+    <string name="choose_branch_warning">الرجاء إختيار فرع</string>
+    <string name="jordan_flag">علم الأردن</string>
+    <string name="deliver_to">توصيل إلى</string>
+    <string name="add_location">إضافة موقع</string>
+
+    <string-array name="gender_array">
+        <item>اختر الجنس</item>
+        <item>ذكر</item>
+        <item>انثى</item>
+    </string-array>
+
+    <string-array name="payment_methods_array">
+        <item>اختر</item>
+        <item>كاش</item>
+        <item>اونلاين</item>
+    </string-array>
+
+    <string-array name="receipt_method_array">
+        <item>اختر</item>
+        <item>استلام من الموقع</item>
+        <item>توصيل</item>
+    </string-array>
+
+    <string name="ops_cancel">تم إلغاء العملية</string>
+    <string name="select_location_message">الرجاء اختيار موقع</string>
+    <string name="payment_message">الرجاء تحديد طريقة الدفع</string>
+    <string name="receipt_message">الرجاء تحديد طريقة الاستلام</string>
+    <string name="empty_cart">السلة فارغة</string>
+    <string name="title_activity_maps">الخريطة</string>
+    <string name="confirm_pin_location">تأكيد الموقع</string>
+    <string name="delivery_location">موقع التوصيل</string>
+    <string name="location">الموقع</string>
+    <string name="no_email">لا يوجد تطبيق للإيميل</string>
+    <string name="order_no">طلب رقم : %d</string>
+    <string name="order_details">تفاصيل الطلب</string>
+    <string name="no_of_items">عدد المنتجات</string>
+    <string name="total_price">المجموع:</string>
+    <string name="payment_status">حالة الدفع:</string>
+    <string name="shipping_address">عنوان التوصيل</string>
+    <string name="quantity">الكمية:</string>
+    <string name="guest_login"> الرجاء تسجيل الدخول اولا </string>
+    <string name="open_cart">فتح السلة</string>
+    <string name="close">إلغاء</string>
+    <string name="clear_cart_message">هناك منتجات في عربة التسوق الخاصة بك … يرجى إفراغها قبل تغيير الفرع !!!!</string>
+    <string name="promo_code_check">الرجاء إدخال رمز الخصم</string>
+    <string name="apply">تطبيق</string>
+    <string name="promo_code">رمز الخصم</string>
+    <string name="products">المنتجات</string>
+    <string name="all_categories">جميع الأقسام</string>
+    <string name="welcome_login">مرحبًا بك مرة أخرى \n تسجيل الدخول باستخدام بريدك الإلكتروني وكلمة المرور</string>
+    <string name="price">%s دينار</string>
+    <string name="delete">حذف</string>
+    <string name="money">المال</string>
+    <string name="yes">نعم</string>
+    <string name="edit_account">تعديل الحساب</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="submit">إرسال</string>
+    <string name="search_empty">حقل البحث فارغ</string>
+    <string name="search">بحث</string>
+    <string name="products_search">ابحث عن المنتجات</string>
+    <string name="payment_date">التاريخ</string>
+    <string name="message">اكتب رسالة</string>
+    <string name="first_name">الاسم الاول</string>
+    <string name="last_name">الاسم الاخير</string>
+    <string name="send">ارسال</string>
+    <string name="subject">الموضوع</string>
+    <string name="fill_all_filed">املاء جميع الحقول</string>
+    <string name="product_name"> اسم المنتج :  </string>
+    <string name="product_price"> سعر المنتج : </string>
+    <string name="current_password"> كلمة السر الحالية </string>
+    <string name="new_password"> كلمة السر الجديدة </string>
+    <string name="_962">+962</string>
+    <string name="jod"> JD </string>
+    <string name="username">اسم المستخدم او رقم الهاتف </string>
+
+    <string name="user_information" >تأكيد المعلومات</string>
+    <string name="diliveryFess">رسوم التوصيل</string>
+    <string name="payment">الدفع</string>
+    <string name="shipping_fees">رسوم التوصيل</string>
+    <string name="resend_code_30">(%s)اعادة ارسال بعد </string>
+    <string name="resend_code">اعادة ارسال الرمز</string>
+    <string name="verification_required">يجب التحقق من رقم الهاتف</string>
+    <string name="phone_number_sign_up">* رقم الهاتف</string>
+    <string name="add_phone_number">الرجاء إدخال رقم الهاتف</string>
+    <string name="edit_phone">تغيير رقم الهاتف</string>
+    <string name="confirm_new_password">تأكيد كلمة السر الجديدة</string>
+    <string name="old_password">كلمة السر القديمة</string>
+    <string name="forget_password_title">اعادة تعيين كلمة السر</string>
+    <string name="please_enter_phone">الرجاء ادخال رقم الهاتف لإرسال رمز التأكيد على الهاتف</string>
+
+</resources>
