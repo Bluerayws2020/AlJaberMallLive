@@ -74,7 +74,7 @@ class CartAdapter(
                             quantity++
                         itemQuantity.text = quantity.toString()
                         val sum : Double = summation.text.toString().toDouble()
-                        summation.text = (sum * 2.0).toString()
+                        summation.text = (sum +currentList[absoluteAdapterPosition].unit_price.toDouble()).toString()
                         onCartListener.updateCartItem(order_item_id.toInt(), quantity,order_id)
                     }
                     R.id.remove_item -> {

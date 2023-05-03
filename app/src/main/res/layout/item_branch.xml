@@ -4,7 +4,8 @@
     android:layout_height="wrap_content"
     android:clickable="true"
     android:focusable="true"
-    android:foreground="?android:attr/selectableItemBackground">
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layoutDirection="rtl">
 
     <TextView
         android:id="@+id/branch_title"

@@ -7,7 +7,11 @@ buildscript {
         mavenCentral()
         google()
         gradlePluginPortal()
-        maven() { url 'https://jitpack.io' }
+//        maven() {  }
+        maven {
+            url 'https://jitpack.io'
+            mavenCentral()
+        }
 
     }
 

@@ -12,7 +12,8 @@ android:layout_gravity="top"
     android:gravity="top"
 android:backgroundTint="#A1808080"
 
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl">
 
         <LinearLayout
             android:layout_width="match_parent"

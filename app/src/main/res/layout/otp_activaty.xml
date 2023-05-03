@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Otp">
+    tools:context=".Otp"
+    android:layoutDirection="rtl">
 
 <!--    <androidx.appcompat.widget.Toolbar-->
 <!--        android:id="@+id/toolbar"-->
@@ -84,17 +85,47 @@
 <!--        app:layout_constraintTop_toBottomOf="@+id/textView2" />-->
 
 
-    <EditText
+<!--    <EditText-->
+<!--        android:id="@+id/otp_view_et"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--           app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView2"-->
+<!--        android:layout_margin="30dp"-->
+<!--        android:inputType="phone"-->
+<!--        android:textAlignment="center"-->
+<!--            />-->
+
+
+    <com.chaos.view.PinView
         android:id="@+id/otp_view_et"
-        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-           app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-        android:layout_margin="30dp"
-        android:inputType="phone"
-        android:textAlignment="center"
-            />
+        android:cursorVisible="true"
+        android:inputType="number"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:padding="1dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorColor="@color/black"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemHeight="48dp"
+        app:itemRadius="4dp"
+        app:itemSpacing="5dp"
+        app:itemWidth="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lineColor="@color/black"
+        app:lineWidth="2dp"
+        app:viewType="rectangle"
+        />
+
 
 
 
@@ -104,7 +135,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -118,6 +149,7 @@
                 android:padding="12dp"
                 android:textAllCaps="false"
                 android:text="تحقق"
+
                 app:cornerRadius="14dp" />
 
             <ProgressBar
@@ -141,22 +173,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/frame_button" />
 
-        <TextView
-            android:id="@+id/resend_code_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:clickable="true"
-            android:enabled="false"
-            android:focusable="true"
-            android:foreground="?attr/selectableItemBackground"
-            android:text="@string/resend_code_30"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+    <TextView
+        android:id="@+id/resend_code_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:enabled="false"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/resend_code_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-        <TextView
+    <TextView
             android:id="@+id/resend_code"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

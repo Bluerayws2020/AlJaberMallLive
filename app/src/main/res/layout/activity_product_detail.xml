@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".ProductDetailActivity">
+    tools:context="com.blueray.aljabermall.ProductDetailActivity"
+    android:layoutDirection="rtl">
 
     <LinearLayout
         android:layout_width="match_parent"

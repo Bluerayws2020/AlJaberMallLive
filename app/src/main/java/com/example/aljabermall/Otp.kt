@@ -8,8 +8,10 @@ import android.content.res.Configuration
 import android.graphics.Color
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.text.method.PasswordTransformationMethod
 import android.util.Log
 import android.view.MenuItem
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -43,6 +45,18 @@ class Otp : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = OtpActivatyBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.otpViewEt.apply {
+            setAnimationEnable(true)
+            setCursorVisible(true)
+            setHideLineWhenFilled(false)
+            setTransformationMethod(PasswordTransformationMethod())
+            setPasswordHidden(false)
+            setOnClickListener {
+                val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0)
+            }
+        }
 
 
 
@@ -114,7 +128,7 @@ saveUserData(uid!!)
 //        binding.otpViewEt.setOtpCompletionListener { otpCode = it }
 
         binding.verifyOtpBtn.setOnClickListener {
-            if (otpCode.isNotEmpty() && otpCode.length == 6) {
+            if (otpCode?.isNotEmpty()!! && otpCode.length == 6) {
                 it.inVisible()
                 binding.progressVerifyOtp.show()
                 otpViewModel.sendOtp(

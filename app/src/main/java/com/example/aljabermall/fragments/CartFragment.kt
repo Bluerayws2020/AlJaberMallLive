@@ -45,6 +45,7 @@ class CartFragment : BaseFragment<FragmentCartBinding, CartViewModel>(),
     private var receiptStatus = 0
     private var locationId = ""
     private var promoCode = ""
+    private var numOfOrders=0
 
     var cityId = ""
     var areaId = ""
@@ -149,6 +150,8 @@ var couponId:String? = null
                         }
 
                         cartAdapter?.submitList(result.data.user_cart.cart_items)
+                        cartAdapter?.notifyDataSetChanged()
+                        numOfOrders=result.data.user_cart.cart_items.size
                         orderId = result.data.user_cart.order_id
 
 
@@ -158,6 +161,7 @@ var couponId:String? = null
                 }
                 is NetworkResults.Error -> {
                     result.exception.printStackTrace()
+//                    requireActivity().onBackPressed()
                     Log.d("CARTITEMERROR", result.exception.toString())
 //                    toast(getString(R.string.error))
                 }
@@ -184,10 +188,14 @@ var couponId:String? = null
             when (result) {
                 is NetworkResults.Success -> {
 //                    toast(result.data.status.msg)
+                    if((numOfOrders-1)==0){
+                        requireActivity().onBackPressed()
+                    }
                     viewModel.retrieveCart()
                 }
                 is NetworkResults.Error -> {
 //                    toast(getString(R.string.error))
+
                     result.exception.printStackTrace()
                 }
             }

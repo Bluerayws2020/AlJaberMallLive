@@ -158,7 +158,10 @@
     <string name="_962">+962</string>
     <string name="jod"> JD </string>
     <string name="username">اسم المستخدم او رقم الهاتف </string>
-
+    <string name="hi">مرحبا</string>
+    <string name="error_occurred">error_occurred</string>
+    <string name="payments">Payment</string>
+    <string name="correct_otp_required">Err</string>
     <string name="user_information" >تأكيد المعلومات</string>
     <string name="diliveryFess">رسوم التوصيل</string>
     <string name="payment">الدفع</string>
