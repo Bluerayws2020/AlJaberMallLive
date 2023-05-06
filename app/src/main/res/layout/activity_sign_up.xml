@@ -132,6 +132,9 @@
                     android:autofillHints="@string/mobile_number"
                     android:background="@null"
                     android:hint="@string/mobile_number"
+                    android:textAlignment="textEnd"
+
+
                     android:inputType="phone" />
 
             </LinearLayout>
@@ -194,6 +197,8 @@
             android:background="@drawable/edit_text_border"
             android:hint="@string/password"
             android:inputType="textPassword"
+            android:textAlignment="textEnd"
+
             android:padding="10dp" />
 
         <EditText
@@ -207,6 +212,8 @@
             android:background="@drawable/edit_text_border"
             android:hint="@string/re_password"
             android:inputType="textPassword"
+            android:textAlignment="textEnd"
+
             android:padding="10dp" />
 
         <com.google.android.material.button.MaterialButton

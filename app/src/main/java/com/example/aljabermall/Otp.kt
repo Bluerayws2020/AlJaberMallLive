@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.text.method.PasswordTransformationMethod
 import android.util.Log
+import android.util.Log.d
 import android.view.MenuItem
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
@@ -50,7 +51,7 @@ class Otp : AppCompatActivity() {
             setAnimationEnable(true)
             setCursorVisible(true)
             setHideLineWhenFilled(false)
-            setTransformationMethod(PasswordTransformationMethod())
+//            setTransformationMethod(PasswordTransformationMethod())
             setPasswordHidden(false)
             setOnClickListener {
                 val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
@@ -128,14 +129,19 @@ saveUserData(uid!!)
 //        binding.otpViewEt.setOtpCompletionListener { otpCode = it }
 
         binding.verifyOtpBtn.setOnClickListener {
-            if (otpCode?.isNotEmpty()!! && otpCode.length == 6) {
+            d("ayham",binding.otpViewEt.text.toString())
+            if (binding.otpViewEt.text?.isNotEmpty()!! && binding.otpViewEt.text?.length == 6) {
                 it.inVisible()
                 binding.progressVerifyOtp.show()
                 otpViewModel.sendOtp(
                     phone.toString(),
                     type.toString(),
-                    otpCode.toString(),
+                    binding.otpViewEt.text.toString(),
                 )
+
+
+
+
             } else {
                 showMessage(getString(R.string.correct_otp_required))
             }

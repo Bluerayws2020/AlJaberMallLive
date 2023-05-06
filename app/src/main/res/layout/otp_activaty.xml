@@ -104,6 +104,7 @@
         style="@style/PinWidget.PinView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:cursorVisible="true"
         android:inputType="number"
         android:layout_marginTop="@dimen/_20sdp"
@@ -114,6 +115,7 @@
         app:cursorColor="@color/black"
         app:cursorWidth="2dp"
         app:hideLineWhenFilled="true"
+
         app:itemCount="6"
         app:itemHeight="48dp"
         app:itemRadius="4dp"
@@ -124,6 +126,7 @@
         app:lineColor="@color/black"
         app:lineWidth="2dp"
         app:viewType="rectangle"
+
         />
 
 

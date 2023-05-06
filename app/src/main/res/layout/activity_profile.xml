@@ -73,6 +73,7 @@
             android:background="@drawable/edit_text_border"
             android:hint="@string/full_name"
             android:inputType="text"
+            android:textAlignment="textEnd"
             android:textSize="18sp"
             android:padding="12dp" />
 
@@ -87,6 +88,7 @@
             android:background="@drawable/edit_text_border"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
+            android:textAlignment="textEnd"
             android:textSize="18sp"
             android:padding="12dp" />
 
@@ -135,8 +137,7 @@
                     android:id="@+id/phone_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center|end"
                     android:autofillHints="@string/mobile_number"
                     android:background="@null"
                     android:hint="@string/mobile_number"
@@ -158,6 +159,8 @@
             android:background="@drawable/edit_text_border"
             android:hint="@string/new_password"
             android:inputType="textPassword"
+            android:textAlignment="textEnd"
+
             android:padding="10dp" />
         <EditText
             android:id="@+id/confirm_pass"
@@ -169,6 +172,7 @@
             android:background="@drawable/edit_text_border"
             android:hint="@string/current_password"
             android:inputType="textPassword"
+            android:textAlignment="textEnd"
             android:padding="10dp" />
         <LinearLayout
             android:layout_width="match_parent"
