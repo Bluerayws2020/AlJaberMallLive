@@ -66,7 +66,7 @@ class Otp : AppCompatActivity() {
         val phone = intent.getStringExtra(PHONENUMEBR)
         val type = intent.getStringExtra(OTP_TYPE)
         val uid = intent.getStringExtra(CHANGE_PHONE_UID)
-Log.d("TYPEEEEE",type.toString())
+        Log.d("TYPEEEEE",type.toString())
         val playerId = intent.getStringExtra(PLAYERID)
 
 
@@ -77,15 +77,13 @@ Log.d("TYPEEEEE",type.toString())
                     if (results.data.status == 200) {
 
 //                        send user id to rest password page
-
-
-if (type == "1" ){
-saveUserData(uid!!)
-}else {
-    val intentSignIn = Intent(this, ResetPasswordActivity::class.java)
-    intentSignIn.putExtra(CHANGE_PHONE_UID,uid.toString())
-    startActivity(intentSignIn)
-}
+                        if (type == "1" ){
+                        saveUserData(uid!!)
+                    }else {
+                        val intentSignIn = Intent(this, ResetPasswordActivity::class.java)
+                        intentSignIn.putExtra(CHANGE_PHONE_UID,uid.toString())
+                        startActivity(intentSignIn)
+                    }
 
                         showMessage(results.data.msg.toString())
 

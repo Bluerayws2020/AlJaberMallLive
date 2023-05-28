@@ -6,6 +6,7 @@ import android.util.Log
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.lifecycle.Lifecycle
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.adapter.FragmentStateAdapter
@@ -13,7 +14,7 @@ import com.example.aljabermall.fragments.ProductFragment
 import com.example.aljabermall.models.ProductItems
 
 class SubCategoryPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) :
-    FragmentStateAdapter(fragmentManager, lifecycle) {
+    FragmentStateAdapter(fragmentManager,lifecycle) {
 
     private val productsList: MutableList<ArrayList<ProductItems>> = ArrayList()
 
@@ -32,5 +33,22 @@ class SubCategoryPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifec
         productFragment.arguments = bundle
         return productFragment
     }
+
+//    override fun getCount(): Int {
+//        return productsList.size
+//    }
+//
+//    override fun getItem(position: Int): Fragment {
+//
+//    }
+//
+//    override fun getItemCount(): Int {
+//        TODO("Not yet implemented")
+//    }
+//
+//    override fun createFragment(position: Int): Fragment {
+//        TODO("Not yet implemented")
+//    }
+
 
 }

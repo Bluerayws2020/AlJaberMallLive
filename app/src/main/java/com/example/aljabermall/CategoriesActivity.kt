@@ -1,13 +1,16 @@
 package com.example.aljabermall
 
 import android.content.Context
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
 import android.view.View
+import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.content.ContextCompat
 import com.example.aljabermall.adapters.CategoryPagerAdapter
 import com.example.aljabermall.adapters.SubCategoryPagerAdapter
 import com.example.aljabermall.databinding.ActivityCategoriesBinding
@@ -27,10 +30,13 @@ import java.util.*
 
 class CategoriesActivity : AppCompatActivity() {
 
+   // private  var selectedTap: Int = 0
     private lateinit var binding: ActivityCategoriesBinding
     private val productVM by viewModels<ProductsViewModel>()
     private var cateId: Int? = null
     private var language = ""
+    private var pos = 0
+    private lateinit var selectedTab1 :TabLayout.Tab
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -113,6 +119,10 @@ class CategoriesActivity : AppCompatActivity() {
         //         defalut sub Catgeroy
 
         language = HelperUtils.getLang(this)
+       // binding.pagerProducts.setCurrentItem(selectedTap, false)
+
+        //binding.tabLayoutCategory.
+
     }
 
 
@@ -139,32 +149,54 @@ class CategoriesActivity : AppCompatActivity() {
 
         binding.pagerProducts.adapter = categoryPagerAdapter
 
+        for (item in tabListTitle){
+            binding.tabLayoutCategory.addTab(binding.tabLayoutCategory.newTab().setText(item))
+        }
 
+//        TabLayoutMediator(
+//            binding.tabLayoutCategory,
+//            binding.pagerProducts
+//        ) { tab: TabLayout.Tab, position: Int ->
+//            tab.text = tabListTitle[position]
+//            cateId = list[position]?.category_id
+//            tab.view.setOnClickListener{
+//                Log.d("tabclick","clisk")
+//                productVM.retrieveProductSubCategories(list[position]?.category_id.toString())
+//                binding.subpd.show()
+//                tabListTitle.clear()
+//                supportActionBar?.title = tab.text
+//                //selectedTap = position
+//                tab.select()
+//
+//            }
+//        }.attach()
 
-
-        TabLayoutMediator(
-            binding.tabLayoutCategory,
-            binding.pagerProducts
-        ) { tab: TabLayout.Tab, position: Int ->
-            tab.text = tabListTitle[position]
-            cateId = list[position]?.category_id
-            tab.view.setOnClickListener{
-                Log.d("tabclick","clisk")
-                productVM.retrieveProductSubCategories(list[position]?.category_id.toString())
+        binding.tabLayoutCategory.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+            override fun onTabSelected(tab: TabLayout.Tab) {
+//                tab.view?.setBackgroundResource(R.drawable.tab_selected)
+                cateId = list[tab.position]?.category_id
+                productVM.retrieveProductSubCategories(list[tab.position]?.category_id.toString())
                 binding.subpd.show()
-                tabListTitle.clear()
-
-                binding.tabLayoutCategory.getTabAt(position)?.select()
-
+                supportActionBar?.title = tab.text
+            //                selectedTab1 = tab
+                //selectedTap = tab.position
             }
-        }.attach()
 
-        binding.tabLayoutCategory.visibility = View.VISIBLE
+            override fun onTabUnselected(tab: TabLayout.Tab) {
+//                tab.view?.setBackgroundResource(R.drawable.tab_unselected)
+            }
 
-        val pos = list.indexOfFirst {
+            override fun onTabReselected(tab: TabLayout.Tab) {
+                // Not implemented yet
+            }
+        })
+
+
+
+       // binding.tabLayoutCategory.visibility = View.VISIBLE
+
+        pos = list.indexOfFirst {
             it?.category_id == cateId
-
-
         }
 
 //    binding.tabLayoutCategory
@@ -182,12 +214,8 @@ class CategoriesActivity : AppCompatActivity() {
         val tabListTitle: MutableList<String> = ArrayList()
         list.forEach { cate ->
             cate?.let {
-
                 tabListTitle.add(it.category_name_ar)
                 categoryPagerAdapter.addProductsList(it.items)
-
-
-
             }
         }
 
@@ -200,12 +228,13 @@ class CategoriesActivity : AppCompatActivity() {
             binding.tabLayoutSubCategory.show()
 
 
+
         }
         Log.d("arr couns",list.size.toString())
 
         binding.pagerProducts.adapter = categoryPagerAdapter
 
-//
+
         TabLayoutMediator(
             binding.tabLayoutSubCategory,
             binding.pagerProducts
@@ -228,9 +257,9 @@ class CategoriesActivity : AppCompatActivity() {
 
 
 
-        binding.tabLayoutSubCategory.setOnClickListener {
-
-        }
+//        binding.tabLayoutSubCategory.setOnClickListener {
+//
+//        }
 
         binding.tabLayoutSubCategory.visibility = View.VISIBLE
 
@@ -243,6 +272,7 @@ class CategoriesActivity : AppCompatActivity() {
 //      binding.pagerProducts.setOnClickListener{
 //          Log.d("Hello for tab layout","1")
 //    }
+
 
     }
 
