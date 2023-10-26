@@ -166,7 +166,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMapCli
         val geocoder = Geocoder(this, Locale.getDefault())
         try {
             val addresses = geocoder.getFromLocation(lat, lng, 1)
-            val obj = addresses[0]
+            val obj = addresses!!.get(0)
             val address = obj.getAddressLine(0)
             city = obj.locality
             street = obj.thoroughfare

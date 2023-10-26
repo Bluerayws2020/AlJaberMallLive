@@ -284,10 +284,6 @@ var couponId:String? = null
                         binding.spinnerReceipt.setSelection(0)
                         binding.couponAdd.show()
                         binding.couponView.hide()
-
-
-
-
                     } else {
                         val intentProductDetail =
                             Intent(requireContext(), HomeActivity::class.java)

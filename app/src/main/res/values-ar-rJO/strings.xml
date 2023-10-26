@@ -98,7 +98,7 @@
     <string-array name="payment_methods_array">
         <item>اختر</item>
         <item>كاش</item>
-        <item>اونلاين</item>
+<!--        <item>اونلاين</item>-->
     </string-array>
 
     <string-array name="receipt_method_array">
@@ -176,5 +176,6 @@
     <string name="old_password">كلمة السر القديمة</string>
     <string name="forget_password_title">اعادة تعيين كلمة السر</string>
     <string name="please_enter_phone">الرجاء ادخال رقم الهاتف لإرسال رمز التأكيد على الهاتف</string>
+    <string name="n_9_5">توصيل المنتجات \nخلال ساعة من الساعه ال 9 صباحًا الى الساعة ال 5 مساءًا</string>
 
 </resources>

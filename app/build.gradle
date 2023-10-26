@@ -13,15 +13,15 @@ plugins {
 }
 
 android {
-    compileSdkVersion 32
+    compileSdkVersion 33
     buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.bluerayws.aljabermall"
         minSdk 21
-        targetSdk 32
-        versionCode 31
-        versionName "31"
+        targetSdk 33
+        versionCode 44
+        versionName "44"
         multiDexEnabled true
 //        resConfigs "ar"
 

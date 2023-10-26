@@ -13,6 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
+
         <ImageView
             android:id="@+id/drawer_btn"
             android:layout_width="34dp"
@@ -62,6 +64,27 @@
             android:layout_marginBottom="20dp"
             android:visibility="gone"
             android:src="@drawable/bill" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/delivary"
+            android:layout_gravity="bottom|right"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:text="@string/n_9_5"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="10dp"
+            />
 
     </FrameLayout>
 
@@ -109,6 +132,7 @@
                 android:textColor="@color/red_500"
                 android:textSize="19sp"
                 android:visibility="gone" />
+
 
         </FrameLayout>
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
